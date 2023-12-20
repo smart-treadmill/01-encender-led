@@ -1,8 +1,10 @@
 
 function App() {
+
+  const server_url = 'http://localhost:8000'
   
   const encender = () => {
-    fetch('http://localhost:8000/encender')
+    fetch(server_url + '/encender')
       .then((res) => res.json())
       .then((data) => {
         console.log({ data })
@@ -10,7 +12,7 @@ function App() {
   }
 
   const apagar = () => {
-    fetch('http://localhost:8000/apagar')
+    fetch(server_url + '/apagar')
       .then((res) => res.json())
       .then((data) => {
         console.log({ data })
