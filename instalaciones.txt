@@ -1,0 +1,19 @@
+sudo apt update
+sudo apt upgrade
+
+
+python3 --version
+
+sudo apt install python3
+
+sudo apt install python3-pip
+
+pip3 install --user virtualenv
+
+python3 -m venv mi_entorno
+
+source mi_entorno/bin/activate
+
+pip3 install fastapi uvicorn
+
+
