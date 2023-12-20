@@ -18,7 +18,7 @@ Asegúrate de tener instalado lo siguiente:
 2. Navega a la carpeta del servidor y ejecuta el servidor con Uvicorn:
    ```bash
    cd server
-   uvicorn app:app --reload
+   uvicorn app:app --host 0.0.0.0 --port 8000
    ```
    Esto iniciará el servidor en modo de desarrollo, recargando automáticamente ante cualquier cambio.
 
